@@ -1,0 +1,148 @@
+
+
+{% extends 'layout.html' %}
+{% block  body  %}
+    
+
+    
+    <!-- navbar end  -->
+    <!-- section start  -->
+    <section class="head"   style="background-image: url('{{ url_for('static', filename='img/architect.jpg') }}')">
+      
+
+
+        <div class="col-text">
+            <h1>{{params['main_heading']}}</h1>
+         
+            <h1>Architects</h1>
+        </div>
+    </section>
+    <!-- head end  -->
+    <!-- project start  -->
+    <section class="project">
+        <div class="text">
+            <h3>Projects</h3>
+        </div>
+        <div class="line"></div>
+
+        <div class="col">
+            <div class="row1">
+                <div class="house" id="box1" style="background-image:url('{{url_for('static',filename='img/house2.jpg')}}')">
+                    <h1>summer house</h1>
+
+                </div>
+                <div class="house" id="box2"  style="background-image:url('{{url_for('static',filename='img/house3.jpg')}}')">
+                    <h1>Brick house</h1>
+
+                </div>
+                <div class="house" id="box3"   style="background-image:url('{{url_for('static',filename='img/house5.jpg')}}')">
+                    <h1>Renovated house</h1>
+
+                </div>
+
+
+            </div>
+            <div class="row2">
+                <div class="house" id="box4">
+                    <h1>Mannat house</h1>
+
+                </div>
+                <div class="house" id="box5">
+                    <h1>Jannat house</h1>
+
+                </div>
+                <div class="house" id="box6">
+                    <h1>Mirza house</h1>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project end  -->
+    <!-- about start  -->
+    <section class="about">
+        <h3>About</h3>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ut rerum veniam repellat perspiciatis numquam
+            animi ratione assumenda, rem id minima molestiae, dignissimos ipsum aperiam voluptatum facilis tempore
+            adipisci repellendus, ipsam corporis. Suscipit, nulla?Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Odio a repudiandae at excepturi voluptate, atque harum illum fugit vel totam odit obcaecati, fuga
+            error perspiciatis repellendus sit dolorem. Suscipit adipisci officia eum beatae perferendis voluptates
+            explicabo! Recusandae voluptates maiores beatae consectetur odio, dicta tenetur quaerat?</p>
+    </section>
+
+    <!-- about end  -->
+    <!-- contact start  -->
+    <section class="contact">
+        <div class="col">
+            <img src="{{url_for('static',filename='img/team1.jpg')}}" alt="">
+            <div>
+
+                <h3>Aaisha khan</h3>
+                <p>Architect</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                    rerum?</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+        <div class="col">
+            <img src="{{url_for('static',filename='img/team2.jpg')}}" alt="">
+            <div>
+
+                <h3>Faraz Bhai</h3>
+                <p>CEO & FOUNDER</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                    rerum?</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+        <div class="col">
+            <img src="{{url_for('static',filename='img/team3.jpg')}}" alt="">
+            <div>
+
+                <h3>Hidayat Bhai</h3>
+                <p>Architect</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                    rerum?</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+        <div class="col">
+            <img src="{{url_for('static',filename='img/team4.jpg')}}" alt="">
+            <div>
+
+                <h3>Anis bhai</h3>
+                <p>Architect</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                    rerum?</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact end  -->
+    <!-- contact form start  -->
+    <section class="contact-form">
+
+        <h1>Contact</h1>
+        <div class="line"></div>
+        <p>lest get in touch and talk about your next project</p>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Comment">
+            <button class="btn">SEND MESSEGE</button>
+        </form>
+
+    </section>
+    <!-- contact form ends  -->
+    <!-- map starts  -->
+    <section class="map">
+        <img src="{{url_for('static',filename='img/map.jpg')}}" alt="">
+    </section>
+    <!-- map ends  -->
+    <!-- footer starts  -->
+  
+
+    {% endblock body %}

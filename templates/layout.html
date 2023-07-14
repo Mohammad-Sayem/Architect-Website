@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the architects</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="row">
+            <div class="col-logo">
+                <h1>{{params['main_heading']}}</h1> 
+            </div>
+            <div class="col-list">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/about">about</a></li>
+                    <li><a href="/services">services</a></li>
+                    <li><a href="/contact">contact us</a></li>
+                    <li><a href="/login">login page</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+        
+    {% endblock body %}
+
+
+
+    <footer class="footer">
+        powered by SS
+    </footer>
+</body>
+
+</html>  

@@ -1,0 +1,426 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar start  */
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+
+    background-color: whitesmoke;
+}
+
+.navbar .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 34px;
+
+
+}
+
+.navbar .row .col-list .col-logo {
+    display: flex;
+
+
+}
+
+.navbar ul li {
+    display: flex;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    text-decoration: none;
+
+
+}
+
+.navbar ul a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 1.3rem;
+    color: black;
+
+}
+
+.navbar h1 {
+    font-size: 1.5 rem;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.head {
+    content: "";
+    /* background: url("{{url_for('static',filename='img/architect.jpg')}}"); */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.head .col-text {
+    display: flex;
+    font-size: 36px;
+
+}
+
+
+.head .col-text h1:nth-child(1) {
+
+
+    padding: 10px 8px;
+    color: #fff !important;
+    background-color: #000 !important;
+
+}
+
+.head .col-text h1:nth-child(2) {
+    margin-top: 9px;
+    margin-left: 10px;
+    color: whitesmoke;
+
+}
+
+/* head end  */
+/* project start  */
+.project {
+    width: 100%;
+    height: 90vh;
+    
+
+
+}
+
+.project .text {
+    margin: 20px auto;
+    font-size: 1.5rem;
+    width: 94%;
+    
+}
+.line{
+    width: 94%;
+    height: 2px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+.project .row1 {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    width: 100%;
+    
+
+
+    /* flex-direction: column; */
+
+    /* vertical-align: middle; */
+    /* border: 2px soli black;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap; */
+
+
+}
+
+.project .row1 img {
+    width: 25%;
+    height: 25vh;
+    margin: 10px;
+}
+
+.project .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+}
+
+.project .row2 img {
+    width: 25%;
+    height: 25vh;
+    margin: 10px;
+}
+
+.project .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+   
+    
+
+}
+
+.house {
+    width: 30%;
+    height: 30vh;
+   
+    margin: 10px;
+
+ 
+    
+}
+
+
+
+
+/* .house img {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    
+} */
+
+.house h1 {
+    width: 67%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+}
+
+#box1 {
+    content: "";
+    /* background: url(./img/house2.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 30%;
+    height: 30vh;
+}
+
+
+#box2 {
+    content: "";
+    /* background: url(./img/house3.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 30%;
+    height: 30vh;
+}
+
+#box3 {
+    content: "";
+    /* background: url(./img/house5.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 30%;
+    height: 30vh;
+}
+
+
+#box4::before {
+    content: "";
+    background: url(./img/house5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 30%;
+    height: 30vh;
+}
+
+
+#box5::before {
+    content: "";
+    background: url(./img/house3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 30%;
+    height: 30vh;
+}
+
+
+#box6::before {
+    content: "";
+    background: url(./img/house2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 30%;
+    height: 30vh;
+}
+
+/* project end  */
+/* about start  */
+.about{
+    width: 94%;
+    margin: auto;
+    
+    height: 35vh;
+}
+.about h3{
+    font-size: 1.5rem ;
+    margin: 15px 0px;
+}
+
+.about p{
+    font-size: 1.1rem;
+    margin:15px 0px ;
+}
+.about .line{
+    width: 100%;
+}
+/* about end  */
+/* contact start  */
+.contact{
+    width: 94%;
+    height: 70vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.col{
+    width: 24%;
+    height: 65vh;
+  
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.col img{
+    width: 100%;
+    height: auto;
+
+}
+.contact .col h3 {
+    margin: 15px 0px;
+    font-size: 1.4rem;
+
+}
+.contact p:nth-child(2) {
+    margin: 15px 0px;
+    font-size: 1.1rem;
+
+}
+.contact p:nth-child(3) {
+    margin: 15px 0px;
+    font-size: 0.9rem;
+
+}
+.btn{
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: #dee1e6;
+    border: none;
+}
+
+/* CONTACT :end  */
+/* contact form  */
+.contact-form{
+    width: 94%;
+    height: 67vh;
+    margin: auto;
+    
+
+
+}
+.contact-form h1{ 
+    margin: 19px 0px;
+
+
+}
+.contact-form p{ 
+    margin:15px 0px;
+
+
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+
+    
+
+}
+.contact-form form input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px;
+}
+.contact-form .btn{
+    width: 17%;
+    padding: 7px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+}
+/* contact form ends  */
+/* map starts */
+.map{
+    width: 94%;
+    height: 82vh;
+    margin: auto;
+  
+}
+.map img{
+    width: 100%;
+    height: 80vh;
+}
+/* map ends   */
+/* footer starts  */
+.footer{
+    width: 94%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+/* Footer end  */
+/* Media queries starts  */
+@media only screen and (max-width:500px){
+   
+}
+

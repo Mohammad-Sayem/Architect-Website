@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% block  body  %}
+
+<section class="contact">
+    <div class="col">
+        <img src="{{url_for('static',filename='img/team1.jpg')}}" alt="">
+        <div>
+
+            <h3>Aaisha khan</h3>
+            <p>Architect</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                rerum?</p>
+            <button class="btn">Contact</button>
+        </div>
+    </div>
+    <div class="col">
+        <img src="{{url_for('static',filename='img/team2.jpg')}}" alt="">
+        <div>
+
+            <h3>Faraz Bhai</h3>
+            <p>CEO & FOUNDER</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                rerum?</p>
+            <button class="btn">Contact</button>
+        </div>
+    </div>
+    <div class="col">
+        <img src="{{url_for('static',filename='img/team3.jpg')}}" alt="">
+        <div>
+
+            <h3>Hidayat Bhai</h3>
+            <p>Architect</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                rerum?</p>
+            <button class="btn">Contact</button>
+        </div>
+    </div>
+    <div class="col">
+        <img src="{{url_for('static',filename='img/team4.jpg')}}" alt="">
+        <div>
+
+                <h3>Anis bhai</h3>
+                <p>Architect</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat libero, quidem laborum modi
+                    rerum?</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="contact-form">
+
+        <h1>Contact</h1>
+        <div class="line"></div>
+        <p>lest get in touch and talk about your next project</p>
+        <form action="/contact"  method = "post">
+            <input type="text" placeholder="Name" name="names">
+            <input type="email" placeholder="Email" name="emails">
+            <input type="text" placeholder="Subject"  name="subjects">
+            <input type="text" placeholder="Comment" name="comments">
+            <button class="btn">SEND MESSEGE</button>
+        </form>
+
+    </section>
+    
+
+    {% endblock body %}

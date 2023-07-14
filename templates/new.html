@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <title>Dashboard</title>
+    <style>
+      .table{
+        margin-top: 70px;
+      }
+    </style>
+</head>
+<body>
+
+  <form action="/new" method="post">
+
+    <div class="input-group mt-5 p-5">
+      <input type="text" class="form-control" name="inputfeild" placeholder="Enter Title" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2">Add</button>
+      </div>
+    </div>
+    
+  </form>
+    
+    {% for add in adds %}
+      
+    <table class="table table-dark ">
+      <thead>
+        <tr>
+          <th scope="col">sno</th>
+          <th scope="col">Title</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>{{add.title}}</td>
+          <td>edit</td>
+          <td>Delete</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    {% endfor %}
+      
+</body>
+</html>

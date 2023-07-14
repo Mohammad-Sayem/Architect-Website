@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block  body  %}
+
+    <section class="project">
+        <div class="text">
+            <h3>services</h3>
+        </div>
+        <div class="line"></div>
+
+        <div class="col">
+            <div class="row1">
+                <div class="house" id="box1"   style="background-image:url('{{url_for('static',filename='img/house2.jpg')}}')">
+                    <h1>summer house</h1>
+
+                </div>
+                <div class="house" id="box2"   style="background-image:url('{{url_for('static',filename='img/house2.jpg')}}')">
+                    <h1>Brick house</h1>
+
+                </div>
+                <div class="house" id="box3"    style="background-image:url('{{url_for('static',filename='img/house2.jpg')}}')">
+                    <h1>Renovated house</h1>
+
+                </div>
+
+
+            </div>
+            <div class="row2">
+                <div class="house" id="box4">
+                    <h1>Mannat house</h1>
+
+                </div>
+                <div class="house" id="box5">
+                    <h1>Jannat house</h1>
+
+                </div>
+                <div class="house" id="box6">
+                    <h1>Mirza house</h1>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    {% endblock body %}
